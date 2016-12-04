@@ -28,5 +28,7 @@ a {
 <h3>Авторизация через VK</h3>
 <a href="/">Home</a>
 <a ng-click="login()">Авторизоваться</a>
+
+<a href="https://oauth.vk.com/authorize?client_id=5760260&scope=offline&redirect_uri=https://isbs.metasystems.ru/manager/test/vk/verify.php&response_type=code">Авторизация-2</a>
 </body>
 </html>
