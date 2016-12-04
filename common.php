@@ -8,11 +8,12 @@
  */
 function err_proc($code, $msg, $file, $line)
 {
-    $response = array(
-        'errorMessage' => 'Error(err_proc) ' . $msg . ' [' . $code . '] on ' . $file . ' in line ' . $line,
-        'stack' => debug_backtrace(false));
-      print_r($response);
-    exit;
+  //  $response = array(
+    $err = 'Error(err_proc) ' . $msg . ' [' . $code . '] on ' . $file . ' in line ' . $line;
+  //      'stack' => debug_backtrace(false));
+    throw new Exception($err);
+  //    print_r($response);
+  //  exit;
 }
 
 error_reporting( E_ALL );
